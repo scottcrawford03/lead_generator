@@ -1,11 +1,8 @@
 <h1>Create New Contact</h1>
-<%= form_for @lead do |f| %>
-  <%= f.label :name, "Name:" %>
-  <%= f.text_field :name %>
-  <%= f.label :phone_number, "Phone Number:" %>
-  <%= f.text_field :phone_number %>
-  <%= f.label :email, "Email:" %>
-  <%= f.text_field :email %>
+<%= bootstrap_form_for @lead do |f| %>
+  <%= f.text_field :name, label: "Name:" %>
+  <%= f.text_field :phone_number, label: "Phone Number:" %>
+  <%= f.text_field :email, label: "Email:" %>
   <%= f.submit "Create" %>
 <% end %>
 <br><br>
