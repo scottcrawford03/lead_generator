@@ -1,0 +1,10 @@
+<h1>Yolo</h1>
+<%= form_for @lead do |f| %>
+  <%= f.label :name, "Name:" %>
+  <%= f.text_field :name %>
+  <%= f.label :phone_number, "Phone Number:" %>
+  <%= f.text_field :phone_number %>
+  <%= f.label :email, "Email:" %>
+  <%= f.text_field :email %>
+  <%= f.submit "Create" %>
+<% end %>
