@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root "home#index"
   resource :leads, only: [:create]
+  resources :admin, only: [:index]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
