@@ -13,6 +13,9 @@
  *= require_tree .
  *= require_self
  */
+.alert.alert-success {
+  text-align: center;
+}
 
 @media screen and (min-width: 1024px){
    .leads-form {
