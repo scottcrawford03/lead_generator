@@ -11,6 +11,101 @@
  * file per style scope.
  *
  *= require_tree .
- *= require rails_bootstrap_forms
  *= require_self
  */
+
+@media screen and (min-width: 1024px){
+   .leads-form {
+     display: flex;
+     margin-top: 100px;
+     width: 100%;
+     justify-content: center;
+   }
+
+  .form-group {
+    width: 500px;
+  }
+
+  .btn {
+    width: 500px;
+  }
+
+  .paramount-group-image {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    height: 400px;
+  }
+
+  .windermere-image {
+    position: fixed;
+    top: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 601px){
+  .leads-form {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form-group {
+    width: 300px;
+  }
+
+  .btn {
+    width: 300px;
+  }
+
+  .image-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .windermere-image {
+    margin-top: 30px;
+  }
+
+  .paramount-group-image {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .leads-form {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form-group {
+    width: 300px;
+  }
+
+  .btn {
+    width: 300px;
+  }
+
+  .image-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .windermere-image {
+    margin-top: 30px;
+  }
+
+  .paramount-group-image {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -6,6 +6,7 @@
       <th>Name</th>
       <th>Phone Number</th>
       <th>Email</th>
+      <th>Notes</th>
     </tr>
   </thead>
   <% @leads.each.with_index do |lead,index| %>
@@ -14,6 +15,7 @@
       <td><%= lead.name %></td>
       <td><%= lead.phone_number %></td>
       <td><%= lead.email %></td>
+      <td><%= lead.notes %></td>
     </tr>
   <% end %>
 </table>

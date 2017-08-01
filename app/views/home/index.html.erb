@@ -1,7 +1,29 @@
-<h1>Create New Contact</h1>
-<%= bootstrap_form_for @lead do |f| %>
-  <%= f.text_field :name, label: "Name:" %>
-  <%= f.text_field :phone_number, label: "Phone Number:" %>
-  <%= f.text_field :email, label: "Email:" %>
-  <%= f.submit "Create" %>
-<% end %>
+<div class="image-container">
+  <%= image_tag("windermere.svg", :alt => "rss feed", class: "windermere-image") %>
+</div>
+
+<div class="leads-form">
+  <%= form_for @lead, url: leads_path do |f| %>
+    <div class="form-group">
+      <%= f.label :fname, "Name:", class: "control-label" %>
+      <%= f.text_field :name, :placeholder => 'Name', class: "form-control" %><br>
+    </div>
+    <div class="form-group">
+      <%= f.label :femail, "Email:", class: "control-label" %>
+      <%= f.text_field :email, :placeholder => 'Email', class: "form-control", id: "input-name" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :fphone_number, "Phone Number:", class: "control-label" %>
+      <%= f.text_field :phone_number, :placeholder => 'Phone Number', class: "form-control" %><br>
+    </div>
+    <div class="form-group">
+      <%= f.label :fnotes, "Notes:", class: "control-label" %>
+      <%= f.text_area :notes, :placeholder => 'Notes', class: "form-control" %><br>
+    </div>
+    <%= f.submit 'Submit', class: "btn btn-primary" %>
+  <% end %>
+</div>
+
+<div class="image-container">
+  <%= image_tag("paramountgroup.jpg", :alt => "rss feed", class: "paramount-group-image") %>
+</div>
